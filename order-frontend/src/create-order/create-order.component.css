@@ -1,0 +1,16 @@
+.create-order {
+    margin: 20px;
+  }
+  
+  .create-order form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .create-order form div {
+    margin-bottom: 10px;
+  }
+  
+  .create-order button {
+    align-self: flex-start;
+  }

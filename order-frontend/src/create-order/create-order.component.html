@@ -1,0 +1,22 @@
+<div class="create-order">
+    <h2>Create Order</h2>
+    <form (ngSubmit)="createOrder()">
+      <div>
+        <label for="id">ID:</label>
+        <input type="text" id="id" [(ngModel)]="orderData.id" name="id" required>
+      </div>
+      <div>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" [(ngModel)]="orderData.amount" name="amount" required>
+      </div>
+      <div>
+        <label for="status">Status:</label>
+        <input type="text" id="status" [(ngModel)]="orderData.status" name="status" required>
+      </div>
+      <button type="submit">Create Order</button>
+    </form>
+    <div *ngIf="response">
+      <h3>Order created:</h3>
+      <pre>{{ response | json }}</pre>
+    </div>
+  </div>

@@ -1,0 +1,14 @@
+<div class="get-order">
+    <h2>Get Order</h2>
+    <form (ngSubmit)="getOrder()">
+      <div>
+        <label for="orderId">Order ID:</label>
+        <input type="text" id="orderId" [(ngModel)]="orderId" name="orderId" required>
+      </div>
+      <button type="submit">Get Order</button>
+    </form>
+    <div *ngIf="order">
+      <h3>Order details:</h3>
+      <pre>{{ order | json }}</pre>
+    </div>
+  </div>

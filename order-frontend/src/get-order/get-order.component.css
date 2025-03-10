@@ -1,0 +1,16 @@
+.get-order {
+    margin: 20px;
+  }
+  
+  .get-order form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .get-order form div {
+    margin-bottom: 10px;
+  }
+  
+  .get-order button {
+    align-self: flex-start;
+  }
